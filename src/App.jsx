@@ -36,7 +36,7 @@ export default function App() {
   };
 
   const ShowLocation = () => {
-    if (errorMsg !== null) {
+    if (errorMsg == null) {
       return <Text>Datos de gps: {location}</Text>;
     }
     return <Cmodal handleGranted={handleGranted} />;
